@@ -4,26 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>RikdomARProject</title>
+    <title>VMBar_WebAR</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     
-<script src = "sdk/blippar-webar-sdk-v1.4.7/webar-sdk/webar-sdk-v1.4.7.min.js?license-key=8e934bae-25f0-4915-9b3a-db2863669104"
+<script src = "sdk/blippar-webar-sdk-v1.4.7/webar-sdk/webar-sdk-v1.4.7.min.js?license-key=f171dd58-1318-4544-9cf5-eb87be2c9743"
 webar-mode="marker-tracking"
-static-camera = "false"
+static-camera = "true"
     auto-start="false"
     auto-init="true"
 auto-marker-detection ="true"
-show-guide-animation-url=""
+show-guide-animation-url="https://assets2.lottiefiles.com/packages/lf20_4kmUDEKo63.json"
 
     rendering-engine="unity"
 logo-src="images/test_logo_here.png"
 logo-height="116px"
 logo-src="images/test_logo_here.png"
 progress-dot-ring-scale="0.30"
-progress-dot-ring-color="#00AAFF"
+progress-dot-ring-color="#FEF100"
 progress-ring-scale="0.36"
-progress-ring-color="#00FFFF"
+progress-ring-color="#FEF100"
 progress-ring-line-width="5"
 
 alert-border-color="#00FFFF"
@@ -91,17 +91,17 @@ show-guide-view="true"></script>
 var Yrotvalue = undefined;
 var UNITYINSTANCE = undefined;
 const cameraObjectName = "webarCamera";
-const stageObjectName = "de2871cb-fbf8-4726-ac53-84ca7baf9f5e";
+const stageObjectName = "15554f82-d38f-4282-9e6a-edff4c1e09df";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/WebAR-RikdomARProject.loader.js";
+      const loaderUrl = buildUrl + "/WebAR-VMBar_WebAR.loader.js";
       const config = {
-        dataUrl: buildUrl + "/WebAR-RikdomARProject.data.unityweb",
-        frameworkUrl: buildUrl + "/WebAR-RikdomARProject.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebAR-RikdomARProject.wasm.unityweb",
+        dataUrl: buildUrl + "/WebAR-VMBar_WebAR.data.unityweb",
+        frameworkUrl: buildUrl + "/WebAR-VMBar_WebAR.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebAR-VMBar_WebAR.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "RikdomARProject",
-        productVersion: "0.1",
+        productName: "VMBar_WebAR",
+        productVersion: "0.1.0",
       };
 
       const container = document.querySelector("#unity-container");
